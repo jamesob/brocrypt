@@ -15,7 +15,7 @@ LOC=$(pwd)
 cd $TMP
 git clone --quiet https://github.com/jamesob/brocrypt.git
 cd brocrypt
-python setup.py install --quiet --user
+python setup.py --quiet install --user
 
 echo "✨ installed brocrypt to ~/.local/bin/brocrypt"
 

@@ -11,6 +11,7 @@ setup(
     author='jamesob',
     author_email='jamesob@chaincode.com',
     py_modules=['brocrypt'],
+    zip_safe=True,
     install_requires=('cryptography',),
     entry_points={
         'console_scripts': [
