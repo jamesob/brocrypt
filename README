@@ -1,0 +1,60 @@
+
+    $$\                                                             $$\     
+    $$ |                                                            $$ |    
+    $$$$$$$\  $$$$$$\  $$$$$$\  $$$$$$$\ $$$$$$\ $$\   $$\ $$$$$$\$$$$$$\   
+    $$  __$$\$$  __$$\$$  __$$\$$  _____$$  __$$\$$ |  $$ $$  __$$\_$$  _|  
+    $$ |  $$ $$ |  \__$$ /  $$ $$ /     $$ |  \__$$ |  $$ $$ /  $$ |$$ |    
+    $$ |  $$ $$ |     $$ |  $$ $$ |     $$ |     $$ |  $$ $$ |  $$ |$$ |$$\ 
+    $$$$$$$  $$ |     \$$$$$$  \$$$$$$$\$$ |     \$$$$$$$ $$$$$$$  |\$$$$  |
+    \_______/\__|      \______/ \_______\__|      \____$$ $$  ____/  \____/ 
+                                                 $$\   $$ $$ |              
+                                                 \$$$$$$  $$ |              
+                                                  \______/\__|              
+    
+    
+                    `` Encryption 
+                                      for brothazzz  ...  ''
+
+
+Brocrypt is a procedure for pretty easily storing secrets with people
+who are comfortable with basic commandline usage.
+
+It uses Python and cryptography's <https://cryptography.io/en/latest/> Fernet
+interface (AES-128).
+
+# Install
+
+$ curl -O https://raw.githubusercontent.com/jamesob/brocrypt/master/brocrypt
+$ chmod +x brocrypt
+
+
+# Sample usage
+
+    $ cat brocrypt | ./brocrypt enc
+
+
+    Make this encrypted message accessible in some hosted service (email, Dropbox,
+    1password, etc.) identified by the key id "040451abacfbdda10bd3f3df5abb303047bd7b59" (e.g. use this as an email
+    subject line). If you're sharing this with someone else, email it or
+    send it to them.
+
+    -----------------------------------------------------------------------
+    gAAAAABbhvVPB7Xx-_kLJkmeB6o_fuiBJJ1qqAD1N1kq2bwY30WeOPRzFfNeA-9a5anz9R9wkTwsI-sJyY0TisGSOMdGTB1sZkRK9dbrDHQKKc3bs51sb7ptHLmcXMmV0SoSMl28nSzrYhQCx9Dkix7m1Y_GFt3-2-aArQ3JB1-K2shkXDjkDhVogbktm1hNAHDFQHiW6mHz6-GxBfMLlGZi6QZepGKC6D9sGPokmn2SHy3npVyIwsRspgCT2F_IyIOs5DluyMvMwm39hcS-kjXaCdahR_ncdX7Jmr6tPzvkxcVgEZUEvL-oFFLQngn008d-DUGg5XTcUHWk_4_dioloc7w-Puy_uaQkakWKOQP4lj2xnfii1v6FGa5hbe8dwyFFg--yANvQVHRBnlZPDrE3RqC8_ldMvesJw_3qv_BxkpCAu7EDQ2rfL8xiIHmEYS4LCvc3W40h9ZlnlZWYm-bAfTTyAzkoeVSWWzoFyzQTKCrdZrQjjH7edjOIQZZRqGAJ04vBdD7vxRMS2oZspzKoSHcbmBow4DDknakVEl5Ji3RDExRAAaFwmhiygl1ZQlfSbb4f2a5o2huM6fJCWTo9WvdFWe0pW7CFA2ivU0PMF5jdyc_2ti5yeM201Hcw2OIlmCroEgPiwQQVXyNjZmjjErSrd8suxQWplPNogZjDK_j7QwELiNng8KgOWKh789KdTA2XbNHO5F716dXfBCm0d0ElAeWjWrR43_w6Jye0s9xPvGHZB1QnCD0wN_eaVOPNUPnF9Ug1aKeU8uHmjkQScsxM75_gUKhsfcMjyvf47KkR4ipyH3rOMKVwA5lOKkIgy98hLEHaRi4p63FdNeab9fsLZjYqj87oN8wih6D-3lLQoDqIStPMbfPsTtmgTjiXFc6m3Clh7eENZuNACT9a_6POKZw1TCMQyYrEcgdnwZMQYgkkGc2ogJNL39KmXR1WtMfcI6HMExYkuS6rmBHuAEIzDGPt6ircknyALa4lj8S7-w7SJ8cWNS1TDUzbGoGYH220feV6HhtH9WHD5PAFUVMXz7y_weNjYtv0iYAOSuClcIQrU9K9BOPi6_T9ki31SmemVHHGrTPRZyuEE9j0oo8IRkYutNjJwpbY5P6-4v_fZytWV4LguKnYbzjlwql-uF7JzgHXOoWxxpFtn5fOp8CvL8ars5jnBQWowLje87vOD62QOGFheReTUo12eKuEHaDgo379CyBnhuFsM1DZkWast9mvmB6ao5NSGl6bohAZUXCtioatw5UgpnmzP7HcVmzb5qX_WajdbclRFcciuy291zoxKEHscRcaaiC61oMiVGaQsfOi5Tr-CscUTEx-mipydKG_p9ycCeg5FQYG9y9DLim0kf0vThFXoeHTfJLfAtOGb86Q9j7PMNcVBySNPju76yMDu5_3UGQeJQrVPhfr-RBW4lMPw9sGxvaaFbdgbWb1j9uwf2Rv2vfRiH2HA3mDdgRnbyC6xzy7I4Kwg8Q-QRbbS42N9w2rzS_wI-Zeigi9Q9bUOhtEvkWpMhCr3Enin24Sar5M80KMeqTOmZobcnXbH5nd9IcQG0zS-uBS3RmRuGGUKveKj7PUTJax8dje37Ietfpa3Xu5vcbux-iZ_Ywbw8D05nSgC51m_O8Xhw0j1rbp2gzabi1yvj7utQiZXqwRlToQicET13N6Kb0u5hj9YVnLou1l5ATA-MV8KdphF7RN24nBx14qrqlbZiIk5RSA_SItcdYgnzmrM1zDaB5bFbfP35pN9GGko9DQErCOXY-XteGoPO4XuU84SnkcuPKtSsno5EL-QDJVTElTKIvueCXP5Wn2s7W_ztzr0UGfbf9MhlpFfQdVgvfElP9G9RH4MdcGHz3tzYeGK78AAoKwiif4mzD2nkXtqyTbm7-8MVf8tosU55OmCH0s5R9Rk_yk5lViNIWhNoLIScfHYjYsZunRaLgAO4iwz-FiotxVlKYLKx32jyyJATSIMu9_yopJWLwbe0THuaxVdAojbZQLezeIC5SYLWdWTIy5vkiq7RsUYemI2pLcEolnSapUhzFZ8blMovBMyJkH-y3x78QlRT-FltqLyFsegVaxQ-D4yfZNW0hUAYmcb8Uc-aPuCwLzmMVM-VBDZe1Sd44cMwstUOyi2D-T0tkIVyPU-7oV5V1joVsU-FKf3QaxexZgVtNpy9JpH9aO6x-__E77-Qdu6HCsgfhzPM8Ajw45O8DDoUxt9ApN4QdGDNeamcSaw9ZfMRyf9gQHEXl6clvl4HUj4SClces3jekDcSe1zrLGbVUOzFAQmakL6rKnd_j1UlC_RmnpJf0SLkebYALQIoftivbPAaMWUCIawKEtE0W-xpWc7wy_NLW7upgoKHPwq4JnSvR9EWQiIojMYMvMpTrnTvU0AMvubJPjPhId5XiOxBJEcvipy8FXRX-sEa90bLn6VuHKtVUh07JAOWuX1n4zYM-qO-_xnObVboM5ydphk_FDYkaFa8rilOpoEA2vvVUpYEGIK_zhgcVarogR94eqQczKMSX8XvDX0a7xsi2lwwhsi6koA_uao2h5YUsHUVbKBYW6J6jw6U7cMlHie7a0oI0M6DSp4IeqY9yQJUlpG5aSfn1IwEnRbPlRKsrUvYKhbEog7OUqcB9vAzOHUfKu17h9FKKioTz1BDBm0No6sKFjcVgzRVnOl-STvUQYIJzZjMi9ioG5gTXdmM5wkKnBPC0Mbdej67djZQgollK4Se-2zwUsxW_pE1ROsCO6XyHSiADusJ-iwG5fLTi46dk7Xm_NCU92iona-acrr0_ief0oIxqOEO_jA44I2MLO-X1PPXm6LwZhItLPV0bJhv261ENW3FXpXgLlY_osozEdNFePgBuQPoAXZJX5j02JSK9xvAfM17vufu7hkODpP9SxAXzwKy70Vm_TMbh2u9c5TfIz0Jq9_fn1PTVAf5mcDZIXVEv84uO18NYIR_nwFw2V0yESHDusQqrL5czSrPv2mx2g4IFAWGElvQdcCC5kQESaPB7wWlYHfvx0Ux3l_INRcPWBWDyjRC5Sd1hIJRZSNiQ9gDpIxm8CZ2YApcQnGqfgeTJ8zZp631vpqWqYjb9soPlibd1wpY-QUFXVz_RQwj_1Y8mUyhDuyrrrpXFvPcbvWCKiXMzD30uhDxNquqMCs4Q1pSjX0zAyeShpi_Rz0FmPoHzHVOn6-2XVZ_rFHPswZLpsxu2YeK8NQFsWdos1f-Wi1ChvXfG0OsZccylSjbYSsJ0UqlAsb3ntBDi_DT814PUua_Q1FzYoEnI5SNb4-4p6HlscppFtNDohkbrOd1jPK0GIRYghrsVKXJNiDEkTTSnni_hioau9FlY0LiHjhu1TVxlTBTS9C_KmOdKVuhxsnRghpEM7gtZGU2wnt2fAWdw1zglN_7gAARAYN3E5kK0vKvC8FVffhH5W0CTSIdpXUBhVhmyW_v5D5veyvP0lqXsae7kHjh3P8MKKWiR6WTU5UA3JlkgJlUMJQqomoORxXrxa-M2QHhuRm-aDHEJhV0YRywDHVChO0DAmqun6QIf4t3HTapkXYUnx6fzd_jz7xUhOifBm_KA-I3xjNYKQrv8H8LlSTuIHF_tjg81IVTCcwrlmR4faBDmFGOAPQYTKW5xLkkQJkhY0PWQpTojc1HBthqbh4OEFfPkSBNQcNm_cqdfuVOMw7tm1LuLsDYdC8qkRKbfhR7gkKO-1jptIjglmbDXL0mmT6Pqf9WefDH0kXPY3wALcSOCN_g5OtPcscCY4JhHHqP0HdOv2xdXdH0VxZ57pQPUeP4k0FFQ6VcgGE5we2rNqdFUHk1tP6EdPm98GuCy8zOUJzLGk45zyS1g7TrsxzuLWK00UwXN7B4dtYHri1Y-0qtMUfCdiThETmcpyJJnm2klQJxugC58u5rz8gX_RO1z540xETu26KHxymuHGiDxcoIHV-3CRGk9-178A6k9UcPD2zYCNozfE4oLvZYbO_JUV4CIZXIkeFPD0teOuvq8ik7WQORI-ABshAPB8Orf3I62dlcZb0UTx-gMFIe85EF9ICJ2yc8hOOaS_oqKZxX9hFe_l2buLKFK0zmH4X8wyR7QLwzOv0zaNjZE27tSr1liWTZ8qyi6AJ5pu3RcU4SfJxnl87EtsDdV-dXR5u79nTbvZ2oFFLEgUOI1AnmSCvevH3XQH267l_By3Ac3lo-z6SY41Wuw48v8LlXV4x9UIkLA577I3pBLIHeuDONvAQ4f_ApbgAaTTiTNB4KUkjkiVv1n8QSWsugKf9AQ-HjVjx67cKxa5idrohQiBdr5WNmqspiHUpAJ9GAmpkGlNdCwlf2J-vzy4XIBabuvCgfzEvlEhoujkuPCBIh4lyyVKS3GxvSo7F1WgDG6BdRXMUt2cpZfWd4kqLWUV87-iAkvzLA55OxVl7UyNtfLKCfXgG9TUfPYdEobS0bP0w2GdvWqiY7akC6v22w3psW27vSmHWj7ACpq7TDwZ5cRUbJOsl6IDZO3CXG88nQ==
+    -----------------------------------------------------------------------
+
+    Then, share these decryption instructions in another hosted service:
+
+    -----------------------------------------------------------------------
+    You've been given an encrypted message.
+
+    To unencrypt the message, place the message payload identified by
+    "040451abacfbdda10bd3f3df5abb303047bd7b59" (check your email) into a file called "infile".
+
+    Then run
+
+        curl -O https://raw.githubusercontent.com/jamesob/brocrypt/master/brocrypt
+        chmod +x brocrypt
+        ./brocrypt dec 4evTvIZPkRjUjIiuhpBUI4PP6wLs4rTzYwcFA3M4os8= infile
+
+    !!! Remember to delete any files containing this information.
+    -----------------------------------------------------------------------
