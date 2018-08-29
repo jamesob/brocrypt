@@ -24,7 +24,8 @@ from cryptography.fernet import Fernet
 
 
 NAME = "brocrypt"
-URL = "https://raw.githubusercontent.com/jamesob/brocrypt/master/brocrypt"
+INSTALL_URL = (
+    "https://raw.githubusercontent.com/jamesob/brocrypt/master/install")
 
 
 def build_parser():
@@ -81,9 +82,8 @@ def enc(args):
 
         Then run
 
-            curl -O {programurl}
-            chmod +x {programname}
-            ./{programname} dec {key} infile
+            curl {programurl} | bash
+            {programname} dec {key} infile
 
         !!! Remember to delete any files containing this information.
         -----------------------------------------------------------------------
@@ -92,7 +92,7 @@ def enc(args):
             token=token,
             key=key,
             programname=NAME,
-            programurl=URL,
+            programurl=INSTALL_URL,
         )))
 
 
