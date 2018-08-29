@@ -22,10 +22,11 @@ who are comfortable with basic commandline usage.
 It uses Python and cryptography's <https://cryptography.io/en/latest/> Fernet
 interface (AES-128).
 
+
 # Install
 
-$ curl -O https://raw.githubusercontent.com/jamesob/brocrypt/master/brocrypt
-$ chmod +x brocrypt
+$ curl https://raw.githubusercontent.com/jamesob/brocrypt/master/install | bash
+$ brocrypt --help
 
 
 # Sample usage
@@ -52,8 +53,7 @@ $ chmod +x brocrypt
 
     Then run
 
-        curl -O https://raw.githubusercontent.com/jamesob/brocrypt/master/brocrypt
-        chmod +x brocrypt
+        curl https://raw.githubusercontent.com/jamesob/brocrypt/master/install | bash 
         ./brocrypt dec 4evTvIZPkRjUjIiuhpBUI4PP6wLs4rTzYwcFA3M4os8= infile
 
     !!! Remember to delete any files containing this information.

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+
+HAS_LOCAL_BIN=1
+
+if [ ! -d "${HOME}/.local/bin" ]; then
+  HAS_LOCAL_BIN=0
+  mkdir -p ${HOME}/.local/bin
+fi
+
+TMP=$(mktemp -d)
+LOC=$(pwd)
+
+cd $TMP
+git clone --quiet https://github.com/jamesob/brocrypt.git
+cd brocrypt
+python setup.py install --quiet --user
+
+echo "✨ installed brocrypt to ~/.local/bin/brocrypt"
+
+if [ "$HAS_LOCAL_BIN" == "0" ]; then 
+  echo '!!! add PATH=${HOME}/.local/bin:${PATH} to your shell rc file'
+fi
+
+cd "${LOC}"
+rm -rf "${TMP}"
