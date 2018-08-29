@@ -91,8 +91,8 @@ def enc(args):
 
         Then run
 
-            curl {programurl} | bash
-            {programname} dec {key} infile
+        curl {programurl} | bash
+        {programname} dec {key} infile
 
         !!! Remember to delete any files containing this information.
         -----------------------------------------------------------------------
