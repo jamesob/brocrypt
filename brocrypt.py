@@ -26,6 +26,7 @@ from cryptography.fernet import Fernet
 NAME = "brocrypt"
 INSTALL_URL = (
     "https://raw.githubusercontent.com/jamesob/brocrypt/master/install")
+IS_3 = sys.version_info[0] >= 3
 
 
 def build_parser():
@@ -58,8 +59,16 @@ def enc(args):
     to_enc = get_file_contents(args.filename)
     key = Fernet.generate_key()
     f = Fernet(key)
+
+    if IS_3:
+        to_enc = to_enc.encode()
+
     token = f.encrypt(to_enc)
     keyhash = hashlib.sha1(key).hexdigest()
+
+    if IS_3:
+        token = token.decode()
+        key = key.decode()
 
     print(dedent(
         """
@@ -98,8 +107,12 @@ def enc(args):
 
 def dec(args):
     to_dec = get_file_contents(args.filename)
-    f = Fernet(args.key)
-    print(f.decrypt(to_dec))
+    to_dec = to_dec.encode() if IS_3 else to_dec
+    key = args.key.encode() if IS_3 else args.key
+    f = Fernet(key)
+    msg = f.decrypt(to_dec)
+    msg = msg.decode() if IS_3 else msg
+    print(msg)
 
 
 def get_file_contents(filename=None):
