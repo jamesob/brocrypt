@@ -15,7 +15,14 @@ LOC=$(pwd)
 cd $TMP
 git clone --quiet https://github.com/jamesob/brocrypt.git
 cd brocrypt
-python setup.py --quiet install --user
+if [ "$(uname)" == "Darwin" ]; then
+  echo
+  echo "!!! Assuming you've already run 'brew install openssl'..."
+  echo
+  pip install --global-option=build_ext --global-option="-L/usr/local/opt/openssl/lib" --global-option="-I/usr/local/opt/openssl/include" .
+else
+  python setup.py --quiet install --user
+fi
 
 echo "✨ installed brocrypt to ~/.local/bin/brocrypt"
 
